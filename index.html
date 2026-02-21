@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Assessment Quiz</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+  <h1>🚀 Developer Assessment Quiz</h1>
+  <div class="progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+</div>
+
+<div id="quizContainer"></div>
+
+<div class="card">
+  <div class="button-group">
+    <button class="primary-btn" id="submitBtn" disabled>Submit Quiz</button>
+    <button class="secondary-btn" id="pdfBtn" style="display:none;">Download PDF</button>
+  </div>
+  <div class="result" id="result"></div>
+</div>
+
+<div class="card waitlist">
+  <h3>Join the Developer Waitlist</h3>
+  <form id="waitlistForm">
+    <input type="email" id="emailInput" placeholder="Enter your email" required>
+    <button class="primary-btn" type="submit" id="waitlistBtn">Join Now</button>
+    <div id="waitlistMessage"></div>
+  </form>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

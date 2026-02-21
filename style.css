@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg,#1e3a8a,#2563eb,#7c3aed);
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 850px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.progress {
+  height: 8px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #22c55e;
+  transition: 0.4s ease;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(16px);
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  color: white;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.question-title {
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.option {
+  display: block;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.12);
+  transition: 0.25s ease;
+}
+
+.option:hover {
+  background: rgba(255,255,255,0.28);
+}
+
+.option.invalid {
+  border: 1px solid #f87171;
+}
+
+.button-group {
+  text-align: center;
+}
+
+button {
+  padding: 13px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 8px;
+  transition: 0.3s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.primary-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.primary-btn:hover:not(:disabled) {
+  background: #16a34a;
+}
+
+.secondary-btn {
+  background: #facc15;
+  color: #1e293b;
+}
+
+.result {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 18px;
+  min-height: 30px;
+}
+
+.success { color: #22c55e; }
+.error { color: #f87171; }
+
+.waitlist input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 14px;
+}
+
+.success-box {
+  background: #22c55e;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 12px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
